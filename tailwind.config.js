@@ -23,10 +23,16 @@ module.exports = {
           "75%": { transform: "rotate(270deg)", opacity: "0" },
           "100%": { transform: "rotate(360deg)", opacity: "1" },
         },
+        slidein: {
+          "0%": { fontSize: "100%", marginLeft: "100%", width: "300%" },
+          "75%": { fontSize: "300%", marginLeft: "25%", width: "150%" },
+          "100%": { fontSize: "100%", marginLeft: "0%", width: "100%" },
+        },
       },
       animation: {
-        slide: "slide 8s linear infinite",
-        rotateFade: "rotateFade 3s ease-in-out infinite",
+        slide: "slide 10s linear infinite",
+        rotateFade: "rotateFade 10s ease-in-out infinite",
+        slidein: "slidein 3s ease-in-out forwards",
       },
     },
   },
