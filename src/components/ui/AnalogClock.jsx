@@ -24,7 +24,7 @@ const AnalogClock = () => {
       <div
         className="hand bg-black absolute bottom-1/2 left-1/2 transform -translate-x-1/2 h-12 w-1"
         style={{
-          height: "30px",
+          height: "20px",
           width: "4px",
           top: "50%",
           left: "50%",

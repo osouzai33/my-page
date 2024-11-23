@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const PhotoAlbum = (images) => {
+const PhotoAlbum = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  console.log((images = []));
+  console.log(images);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -18,7 +18,7 @@ const PhotoAlbum = (images) => {
     <div>
       <img
         src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
+        alt="BackGround"
         style={{ width: "100%" }}
       />
     </div>

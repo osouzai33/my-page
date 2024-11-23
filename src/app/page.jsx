@@ -6,9 +6,9 @@ import PhotoAlbum from "../components/ui/PhotoAlbum";
 import SlideInText from "@/components/ui/SlideInText";
 
 export default function Home() {
-  const images = [
+  const universityImages = [
     "/images/University/black63.jpeg",
-    "/images/University/campus.jpeg",
+    "/images/University/campus.webp",
     "/images/University/day55.jpeg",
     "/images/University/light63.jpeg",
     "/images/University/night.jpeg",
@@ -80,13 +80,12 @@ export default function Home() {
                   早稲田大学基幹理工学部情報通信学科
                 </div>
                 <div className="w-3/12  p-5 flex overflow-hidden">
-                  <p className="hover:animate-slidein z-10">
-                    プロフィール
-                    <br /> 生年月日: 2003/06/12
+                  <p className="text-xl font-extrabold hover:animate-slidein z-10">
                     <br />
-                    出身: 埼玉
+                    Favorite_BasketBall_Team : Boston Celtics
                     <br />
-                    趣味: バスケ
+                    Favorite_BaseBall_Team : 阪神タイガース
+                    <br />
                   </p>
                 </div>
               </div>
@@ -105,7 +104,7 @@ export default function Home() {
                   早稲田大学基幹理工学部情報通信学科
                 </div>
               </div>
-              <PhotoAlbum images={images} />
+              <PhotoAlbum images={universityImages} />
             </div>
           </div>
         </div>
